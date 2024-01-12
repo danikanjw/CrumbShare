@@ -1,0 +1,152 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 16px; 
+}
+
+.navbar {
+    background: linear-gradient(215deg, rgba(30, 30, 30, 0.69) -25.23%, rgba(217, 217, 217, 0.00) 83.58%);
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem !important;
+}
+
+.navbar-nav {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.navbar-nav a {
+    margin-right: 2.5rem;
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: grey;
+}
+
+.navbar-nav button {
+    border-radius: 15px; 
+    border: 1px solid #1E1E1E;
+    background-color: transparent;
+    width: 7.5rem; 
+    height: 2.625rem; 
+}
+
+.navbar-nav button:hover {
+    border-radius: 15px; 
+    border: 1px solid #1E1E1E;
+    background-color: #1E1E1E;
+    color: #FFF;
+    width: 7.5rem; 
+    height: 2.625rem; 
+}
+
+.img-wrapper{
+    height: 14.6875rem;
+    border-radius: 15px;
+    border: 1px solid #404040;
+    background: #FFF;
+}
+
+.img-wrapper.dragover {
+    background-color: #ddd;
+    border: 2px solid #404040;
+}
+
+.select {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.img-container {
+    width: 100%;
+    gap: 10px;
+    overflow: auto;
+}
+  
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.image span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 0 15px 0 0;
+    
+}
+
+.form-title h1 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.form-title p {
+font-size: 1.5rem;
+font-weight: 500;
+}
+
+.form-container {
+    border-radius: 15px;
+    border: 1px solid #404040;
+    height: 4rem;
+}
+
+label {
+font-size: 1.25rem !important;
+font-weight: 600;
+}
+
+.send-btn {
+    border-radius: 15px;
+    width: 12rem;
+    height: 3.625rem;
+    font-size: 1.25rem;
+    float: right;
+    background-color: #1E1E1E;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+footer {
+    background-color: #1E1E1E;
+    margin-top: 5rem;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.space-list > li {
+    margin-bottom: 0.5rem;
+  }
+

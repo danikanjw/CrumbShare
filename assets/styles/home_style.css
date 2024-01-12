@@ -1,0 +1,257 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 16px; 
+}
+
+header {
+    background: linear-gradient(215deg, rgba(30, 30, 30, 0.69) -25.23%, rgba(217, 217, 217, 0.00) 83.58%);
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+}
+
+h3 {
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+}
+
+.row {
+    justify-content: center;
+}
+.col-4 {
+    text-align: center;
+    
+}
+.col-4 p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+}
+
+.btnSignup {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    border: 1px solid #1E1E1E;
+    background: #1E1E1E;
+    padding: 0.6875rem 3.375rem;
+    width: 12rem;
+    height: 3.54375rem;
+    margin-right: 2.5rem;
+    box-shadow: 0 0.21875rem 0.75rem rgba(0, 0, 0, 0.4);
+}
+
+.btnSignup:hover {
+    color: #1E1E1E;
+    background-color: transparent;
+}
+
+.btnLogin {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #1E1E1E;
+    border-radius: 15px;
+    border: 1px solid #1E1E1E;
+    background: #FFF;
+    padding: 0.6875rem 3.375rem;
+    width: 12rem;
+    height: 3.54375rem;
+    box-shadow: 0 0.21875rem 0.75rem rgba(0, 0, 0, 0.4);
+}
+
+.btnLogin:hover {
+    color: #1E1E1E;
+    background-color: transparent;
+}
+
+.image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem !important;
+}
+
+.navbar-nav {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.navbar-nav a {
+    margin-right: 2.5rem;
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: grey;
+}
+
+.navbar-nav button {
+    border-radius: 15px; 
+    border: 1px solid #1E1E1E;
+    background-color: transparent;
+    width: 7.5rem; 
+    height: 2.625rem; 
+}
+
+.navbar-nav button:hover {
+    border-radius: 15px; 
+    border: 1px solid #1E1E1E;
+    background-color: #1E1E1E;
+    color: #FFF;
+    width: 7.5rem; 
+    height: 2.625rem; 
+}
+
+
+.short-about .text-about {
+    text-align: center;
+    position: relative;
+}
+
+.custom-quote {
+    position: relative;
+    font-size: 1.75rem;
+    line-height: normal;
+    margin: 50px auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.custom-quote:before, .custom-quote:after {
+    content: "“";
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.custom-quote:before {
+    position: absolute;
+    top: -20px; 
+    left: 25px; 
+}
+
+.custom-quote:after {
+   position:absolute; 
+   bottom:-20px; 
+   right: 50px; 
+}
+
+.values {
+    margin-top: 12.3rem;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 19.75rem;
+    height: 27.5rem;
+    border-radius: 3.125rem;
+    border: 1px solid #B9B5B5;
+    background: linear-gradient(188deg, #D9D9D9 -15.29%, rgba(217, 217, 217, 0.00) 135.9%);
+    padding-top: 4rem; 
+  }
+  
+
+.value-card h4 {
+    color: #000;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.value-card p {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.values h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.image {
+    width: 13.0625rem;
+    height: 14.0625rem;
+    border-radius: 0.9375rem;
+    background: #D9D9D9;
+}
+
+.join-content {
+    margin-top: 11.25rem;
+    margin-bottom: 8.75rem;
+}
+
+.join-title {
+    color: #000;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 5.25rem;
+}
+
+.join-content {
+    border-radius: 3.125rem;
+    border: 1px solid #B9B5B5;
+    background: linear-gradient(188deg, #D9D9D9 -15.29%, rgba(217, 217, 217, 0.00) 135.9%);
+    width: 69.5rem;
+    height: 43.9375rem;
+}
+
+.join-btn {
+    width: 12rem;
+    height: 3.625rem;
+    border-radius: 0.9375rem;
+    border: 1px solid #1E1E1E;
+    background: #1E1E1E;
+    margin-top: 2.85rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.join-btn:hover {
+    color: #1E1E1E;
+    background-color: white;
+}
+
+footer {
+    background-color: #1E1E1E;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h5 {
+font-size: 1.75rem;
+font-weight: 600;
+}
+
+.space-list > li {
+    margin-bottom: 0.5rem;
+  }
+
