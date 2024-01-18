@@ -9,8 +9,31 @@
 header {
     background: linear-gradient(215deg, rgba(30, 30, 30, 0.69) -25.23%, rgba(217, 217, 217, 0.00) 83.58%);
     height: 100vh;
+    /* overflow: auto; */
 }
 
+/* .welcome-page {
+    display: block;
+} */
+
+@media screen and (max-width: 750px) {
+    header {
+        height: auto;
+    }
+
+    .welcome-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .btnSignup,
+    .btnLogin {
+      display: inline-block; 
+      margin-bottom: 1rem;
+    }
+
+    
+}
 
 h1 {
     font-size: 3rem !important;
@@ -25,15 +48,28 @@ h3 {
 .row {
     justify-content: center;
 }
-.col-4 {
+
+.counter {
+    & h3 {
+        text-align: center;
+    }
+
+    & p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+/* col-md-4 {
     text-align: center;
     
 }
-.col-4 p {
+col-md-4 p {
     font-weight: 500;
     font-size: 1.5rem;
     text-align: center;
-}
+} */
 
 .lead {
     font-size: 1.5rem !important;
@@ -48,10 +84,9 @@ h3 {
     border: 1px solid #1E1E1E;
     background: #1E1E1E;
     padding: 0.6875rem 3.375rem;
-    width: 12rem;
-    height: 3.54375rem;
-    margin-right: 2.5rem;
+    text-align: center;
     box-shadow: 0 0.21875rem 0.75rem rgba(0, 0, 0, 0.4);
+    display: inline-block;
 }
 
 .btnSignup:hover {
@@ -68,8 +103,9 @@ h3 {
     background: #FFF;
     padding: 0.6875rem 3.375rem;
     width: 12rem;
-    height: 3.54375rem;
+    text-align: center;
     box-shadow: 0 0.21875rem 0.75rem rgba(0, 0, 0, 0.4);
+    display: inline-block;
 }
 
 .btnLogin:hover {
@@ -198,25 +234,23 @@ h3 {
     background: #D9D9D9;
 }
 
-.join-content {
-    margin-top: 11.25rem;
-    margin-bottom: 8.75rem;
-}
 
 .join-title {
     color: #000;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
-    margin-top: 5.25rem;
 }
 
 .join-content {
     border-radius: 3.125rem;
+    margin-top: 11.25rem;
+    margin-bottom: 8.75rem;
     border: 1px solid #B9B5B5;
     background: linear-gradient(188deg, #D9D9D9 -15.29%, rgba(217, 217, 217, 0.00) 135.9%);
     width: 69.5rem;
-    height: 43.9375rem;
+    height: auto;
+    padding: 4rem 0 4rem 0;
 }
 
 .join-btn {
@@ -253,5 +287,105 @@ font-weight: 600;
 
 .space-list > li {
     margin-bottom: 0.5rem;
+}
+
+.they-said h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.ts-card {
+    background: linear-gradient(188deg, #D9D9D9 -15.29%, rgba(217, 217, 217, 0.00) 135.9%);
+    border-radius: 3.125rem;
+    border: 1px solid #B9B5B5;
+    width: 33.5rem;
+    height: 15.5rem;
+    padding: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+.name {
+font-size: 1.5rem;
+font-weight: 500;
+padding-left: 1.75rem;
+}
+
+.slider {
+    width: auto;
+    height: 15.5rem;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(33.5rem * 9);
+    animation: slide 50s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-33.5rem); /* Adjust this according to the card width */
+    }
+    66% {
+      transform: translateX(-67rem); /* Adjust this according to the card width */
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
+.modal-content {
+    border-radius: 3rem !important;
+    
+}
+
+.border-line {
+    overflow: hidden;
+    text-align: center;
+}
+  
+.border-line::before,
+.border-line::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+.border-line::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+.border-line::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.form-control {
+    border: 1px solid black !important;
+}
+
+.modal-body button {
+    border-radius: 15px;
+    border: 1px solid #1E1E1E;
+    padding: 0.65rem;
+}
+
+.modal-body a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.signup-modal {
+    color: #FC8019 !important;
+}

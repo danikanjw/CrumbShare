@@ -36,7 +36,7 @@
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container px-0 mt-3">
-              <a class="navbar-brand" href="#">CrumbShare</a>
+              <a href="home.html" class="navbar-brand">CrumbShare</a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -56,7 +56,9 @@
                   <a href="#" class="nav-item">About Us</a>
                   <a href="#" class="nav-item">Action</a>
                   <a href="#" class="nav-item">Contact</a>
-                  <button>Login</button>
+                  <button data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                  </button>
                 </ul>
               </div>
             </div>
@@ -65,9 +67,9 @@
       </section>
 
       <section>
-        <div class="container pb-4">
-          <div class="row align-items-center mt-5">
-            <div class="col-md-6">
+        <div class="welcome-page container pb-4">
+          <div class="welcome-content row align-items-center mt-5">
+            <div class="col-md-6 col-12">
               <h1>
                 Raise Awareness,<br />
                 Share Excess Foods With Others
@@ -78,11 +80,23 @@
                 together
               </p>
               <div class="button mt-5">
-                <a href="#" class="btnSignup">Signup</a>
-                <a href="#" class="btnLogin">Login</a>
+                <a
+                  href="#"
+                  class="btnSignup"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signupModal"
+                  >Signup</a
+                >
+                <a
+                  href="#"
+                  class="btnLogin"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  >Login</a
+                >
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
               <div class="image-center">
                 <img
                   src="assets/image/date_fruit.png"
@@ -92,16 +106,16 @@
               </div>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-4">
+          <div class="counter row mt-5">
+            <div class="col-md-4 col-sm-6">
               <h3>500+</h3>
               <p>Donors</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-sm-6">
               <h3>450+</h3>
               <p>Food Recipients</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-sm-6">
               <h3>100+</h3>
               <p>Projects Successfully<br />Distributed</p>
             </div>
@@ -143,7 +157,7 @@
             <div
               class="col-md-4 d-flex align-items-center justify-content-center"
             >
-              <div class="value-card">
+              <div class="value-card mb-4">
                 <div class="image-center mx-auto">
                   <img
                     src="assets/image/connectivity.png"
@@ -164,7 +178,7 @@
             <div
               class="col-md-4 d-flex align-items-center justify-content-center"
             >
-              <div class="value-card">
+              <div class="value-card mb-4">
                 <div class="image-center">
                   <img
                     src="assets/image/justice.png"
@@ -185,7 +199,7 @@
             <div
               class="col-md-4 d-flex align-items-center justify-content-center"
             >
-              <div class="value-card">
+              <div class="value-card mb-4">
                 <div class="image-center">
                   <img
                     src="assets/image/care.png"
@@ -212,7 +226,7 @@
           <h2 class="join-title">
             Be part of us by sharing food and spreading happiness.
           </h2>
-          <div class="row mt-4">
+          <div class="join-choices row mt-4">
             <div
               class="col-md-6 mb-3 mb-md-0 d-flex justify-content-center align-items-center"
             >
@@ -238,6 +252,355 @@
         </div>
       </section>
     </main>
+
+    <section class="container they-said mb-5">
+      <h2 class="text-center">They Said About Us</h2>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row slider">
+          <div class="slide-track">
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile1.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">Jane Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile2.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">John Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile1.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">Jane Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile2.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">John Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile1.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">Jane Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile2.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">John Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile1.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">Jane Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  This site really helps me to share food with those in need,
+                  and helps me to minimize the waste of excess food.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile2.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">John Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  CrumbShare helped me to get food during my financial crisis.
+                </p>
+              </div>
+            </div>
+            <div class="ts-card">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/image/profile1.png"
+                  class="rounded-circle img-fluid"
+                  alt=""
+                />
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <span class="d-block name">Jane Doe</span>
+                </div>
+              </div>
+              <div class="mt-3">
+                <p class="comment-text">
+                  CrumbShare helps me to donate food appropriately and
+                  responsibly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header px-3 py-0 border-0">
+            <a class="navbar-brand p-2 m-0" href="#">
+              <img
+                src="assets/image/crumbshare.png"
+                alt="Logo"
+                width="42"
+                height="31"
+              />
+            </a>
+            <!-- Title -->
+            <h5 class="modal-title text-center w-100" id="loginModalLabel">
+              LOGIN
+            </h5>
+            <!-- Close button -->
+            <button
+              type="button"
+              class="btn-close float-end m-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mx-5 pb-0">
+            <div class="mb-3 row">
+              <label for="inputMultiple" class="form-label col-sm-3"
+                >No. HP/Email</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputNumEmailLogin"
+                  multiple
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="form-label col-sm-3"
+                >Password</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPasswordLogin"
+                  name="password"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row px-2">
+              <button type="button" class="btn btn-dark my-2">
+                Login
+              </button>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="text-start"><img src="assets/image/Help.png" alt=""><a href="#" class="ms-3">need help?</a></span>
+              <span class="text-end">don't have any account? <span ><a href="#" class="signup-modal">Sign Up</a></span></span>
+            </div>
+            <div class="row my-1 p-0">
+              <p class="border-line m-0"><span>atau masuk dengan</span></p>
+            </div>
+          </div>
+          <div class="modal-footer border-0 d-flex justify-content-center mb-3">
+            <i class="fa-brands fa-google fa-xl"></i>
+            <i class="fa-solid fa-y fa-xl"></i>
+            <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign up Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header px-3 py-0 border-0">
+            <a class="navbar-brand p-2 m-0" href="#">
+              <img
+                src="assets/image/crumbshare.png"
+                alt="Logo"
+                width="42"
+                height="31"
+              />
+            </a>
+            <!-- Title -->
+            <h5 class="modal-title text-center w-100" id="signupModalLabel">
+              SIGN UP
+            </h5>
+            <!-- Close button -->
+            <button
+              type="button"
+              class="btn-close float-end m-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body mx-5 pb-0">
+            <div class="mb-3 row">
+              <label for="inputNumEmailSignup" class="form-label col-sm-3"
+                >No. HP/Email</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputNumEmailSignup"
+                  multiple
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPasswordSignup" class="form-label col-sm-3"
+                >Password</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPasswordSignup"
+                  name="password"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="confirmPassword" class="form-label col-sm-3"
+                >Confirm Password</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  name="password"
+                />
+              </div>
+            </div>
+            <div class="mb-3 row px-2">
+              <button type="button" class="btn btn-dark my-2">
+                Sign Up
+              </button>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="text-start"><img src="assets/image/Help.png" alt=""><a href="#" class="ms-3">need help?</a></span>
+              <span class="text-end">already have an account? <span ><a href="#" class="signup-modal">Login</a></span></span>
+            </div>
+            <div class="row my-1 p-0">
+              <p class="border-line m-0"><span>atau masuk dengan</span></p>
+            </div>
+          </div>
+          <div class="modal-footer border-0 d-flex justify-content-center mb-3">
+            <i class="fa-brands fa-google fa-xl"></i>
+            <i class="fa-solid fa-y fa-xl"></i>
+            <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-body-tertiary text-white text-center text-lg-start">
       <div class="container py-5">
@@ -249,23 +612,34 @@
             <ul class="list-unstyled list-inline">
               <li class="list-inline-item mt-2">
                 <a class="btn-floating mx-1" href="^1^">
-                  <i class="fa-brands fa-google fa-xl" style="color: #d9d9d9"></i>
+                  <i
+                    class="fa-brands fa-google fa-xl"
+                    style="color: #d9d9d9"
+                  ></i>
                 </a>
               </li>
               <li class="list-inline-item">
                 <a class="btn-floating mx-1" href="^2^">
                   <i
-                    class="fa-brands fa-square-instagram fa-xl" style="color: #d9d9d9"></i>
-                  </a>
+                    class="fa-brands fa-square-instagram fa-xl"
+                    style="color: #d9d9d9"
+                  ></i>
+                </a>
               </li>
               <li class="list-inline-item">
                 <a class="btn-floating mx-1" href="^3^">
-                  <i class="fa-brands fa-twitter fa-xl" style="color: #d9d9d9"></i
+                  <i
+                    class="fa-brands fa-twitter fa-xl"
+                    style="color: #d9d9d9"
+                  ></i
                 ></a>
               </li>
               <li class="list-inline-item">
                 <a class="btn-floating mx-1" href="^4^">
-                  <i class="fa-brands fa-facebook-f fa-xl" style="color: #d9d9d9"></i
+                  <i
+                    class="fa-brands fa-facebook-f fa-xl"
+                    style="color: #d9d9d9"
+                  ></i
                 ></a>
               </li>
             </ul>
@@ -276,7 +650,7 @@
 
             <ul class="list-unstyled space-list">
               <li>
-                <a href="#!" class="text-white text-decoration-none">Donors</a>
+                <a href="donor.html" class="text-white text-decoration-none">Donors</a>
               </li>
               <li>
                 <a href="#!" class="text-white text-decoration-none"
